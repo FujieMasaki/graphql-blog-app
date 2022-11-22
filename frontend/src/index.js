@@ -26,6 +26,7 @@ const BOOKS = gql`
 `;
 
 function Books() {
+  // ここでデータフェッチ
   const { loading, error, data } = useQuery(BOOKS);
 
   if (loading) return <p>Loading...</p>;
